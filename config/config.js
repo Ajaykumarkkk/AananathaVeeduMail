@@ -5,12 +5,19 @@ CONFIG = {}; //Make this global to use all over the application
 CONFIG.app = process.env.APP || 'local';
 CONFIG.port = process.env.PORT || '4000';
 
-CONFIG.db_dialect = process.env.DB_DIALECT || 'mysql';
-CONFIG.db_host = process.env.DB_HOST || 'localhost';
-CONFIG.db_port = process.env.DB_PORT || '3306';
-CONFIG.db_name = process.env.DB_NAME || 'myapp';
-CONFIG.db_user = process.env.DB_USER || 'root';
-CONFIG.db_password = process.env.DB_PASSWORD || 'Password1234';
+// CONFIG.db_dialect = process.env.DB_DIALECT || 'mysql';
+// CONFIG.db_host = process.env.DB_HOST || 'localhost';
+// CONFIG.db_port = process.env.DB_PORT || '3306';
+// CONFIG.db_name = process.env.DB_NAME || 'myapp';
+// CONFIG.db_user = process.env.DB_USER || 'root';
+// CONFIG.db_password = process.env.DB_PASSWORD || 'Password1234';
+
+CONFIG.db_dialect = process.env.DB_DIALECT || 'postgres';
+CONFIG.db_host = process.env.DB_HOST || 'postgresql-loceki.alwaysdata.net';
+CONFIG.db_port = process.env.DB_PORT || '5432';
+CONFIG.db_name = process.env.DB_NAME || 'loceki_ajay';
+CONFIG.db_user = process.env.DB_USER || 'loceki';
+CONFIG.db_password = process.env.DB_PASSWORD || 'loceki@5216';
 
 CONFIG.max_pool_conn = process.env.MAX_POOL_CONN || '50';
 CONFIG.min_pool_conn = process.env.MIN_POOL_CONN || '0';
